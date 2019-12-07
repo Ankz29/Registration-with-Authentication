@@ -1,0 +1,36 @@
+﻿@model MvcApplication1.Models.Registration
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2> Registration </h2>
+
+
+<div>
+    <label> USERNAME : </label>
+ @Html.TextBoxFor( Model => Model.UserName) </span>
+
+<div>
+    <div>
+        <label> PASSWORD : </label>
+    @*</div>
+    <div>*@
+        @Html.TextBoxFor( Model => Model.Password )
+        </div>
+        <div>
+            <label> PHONENUMBER : </label>
+        @*</div>
+        <div>*@ @Html.TextBoxFor( Model => Model.PhoneNumber ) </div>
+
+        <div>
+            <label> ADDRESS : </label>
+        @*</div>
+        <div>*@ @Html.TextBoxFor( Model => Model.Address ) </div>
+
+</div>
+<br />
+    <input type="submit" />  
+
+@ViewData["Message"]
+
